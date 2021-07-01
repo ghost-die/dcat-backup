@@ -2,6 +2,7 @@
 
 > 数据库备份
 
+> 基于 https://github.com/spatie/laravel-backup 拓展
 
 ```bash
   composer require ghost/dcat-backup
