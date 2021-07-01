@@ -1,0 +1,33 @@
+{
+    "name": "ghost/dcat-backup",
+    "alias": "Backup",
+    "description": "Dcat Admin Backup",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension","Backup"],
+    "homepage": "https://github.com/ghost-die/dcat-backup",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ghost",
+            "email": "wangqun1436@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0",
+        "spatie/laravel-backup": "^6.16.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ghost\\Backup\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Ghost\\Backup\\DcatBackupServiceProvider",
+        "laravel": {
+            "providers": [
+                "Ghost\\Backup\\DcatBackupServiceProvider"
+            ]
+        }
+    }
+}
